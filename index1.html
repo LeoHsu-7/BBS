@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./css/index1.css">
+    <title>Document</title>
+</head>
+
+<body>
+    <div class="l_container">
+        <div class="l_history">歷史起源</div>
+        <div class="l_left"> <img src="./imgs/1.webp"></div>
+        <div class="l_right"> <img src="./imgs/2.webp"></div>
+        <div class="l_intro">
+            <ul>
+                <li>茶道起源于中国。中国人至少在唐或唐以前，就在世界上首先将</li>
+                <li>茶饮作为一种修身养性之道，唐朝《封氏闻见记》中就有这样的</li>
+                <li>记载：“茶道大行，王公朝士无不饮者。”（意思就是：喝茶，</li>
+                <li>饮茶等茶道被广泛的推行，风靡一时，王公贵族朝臣没有不喝茶</li>
+                <li>的人。）这是现存文献中对茶道的最早记载。由此可见，最早最</li>
+                <li>完善的茶道流程就是唐代陆羽所创的煎茶茶道。吕温在《三月三</li>
+                <li>茶宴序》中对茶宴的优雅气氛和品茶的美妙韵味，作了非常生动</li>
+                <li>的描绘。</li>
+            </ul>
+        </div>
+    </div>
+</body>
+
+</html>
+
+<script>
+    var pic = document.getElementsByTagName('img')
+    for (var i = 0; i < pic.length; i++) {
+        pic[i].onmouseover = function () {
+            this.style.width = this.offsetWidth * 1.1 + 'px'
+            this.style.height = this.offsetHeight * 1.1 + 'px'
+        }
+        pic[i].onmouseleave = function () {
+            this.style.width = this.offsetWidth / 1.1 + 'px'
+            this.style.height = this.offsetHeight / 1.1 + 'px'
+        }
+    }
+</script>
